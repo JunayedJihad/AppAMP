@@ -3,373 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMP Time Planner</title>
+    <title>AppAMP Time Planner</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,500&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="./image/favicon.ico">
-
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header clear">    
-        <div class="web-width"> 
-            <div class="header-logo left">   
-                <img src="./image/logo.png" alt="">
-                <p>AppAMP Theme</p>
-            </div>
-            <div class="header-menu left">   
-                <ul>    
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Live Demo<i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                        <ul>    
-                            <li><a href="#">Time Tracking App</a></li>
-                            <li><a href="#">Health Planner App</a></li>
-                        </ul>    
-                    </li>
-                    <li><a href="#">Demo Blocks<i class="fa fa-caret-down" aria-hidden="true"></i></a>  
-                        <ul>    
-                            <li><a href="#">Headers</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Pricing Table and Article</a></li>
-                            <li><a href="#">Team & Testimonials</a></li>
-                            <li><a href="#">Gallery & Video</a></li>
-                            <li><a href="#">Forms & Maps & Footers</a></li>
-                        </ul> 
-                    </li>
+    
+    <header>    
+        <div class="container"> 
+            <h1 class="text-bg-dark">This is Header</h1>
+        </div>
+    </header>
 
-                </ul>
+    <div class="banner">    
+        <div class="container text-center"> 
+            <h2>Created to save your time</h2>
+            <h1>Time Planner App</h1>
+            <div class="banner-button"> 
+                <a href="#"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a>
+                <a href="#"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a>
             </div>
-            <div class="header-button left text-right">
-                    <a href="#plan-section">Buy Now</a>
+        </div>
+    
+    </div>
+
+    <div class="video"> 
+        <div class="container"> 
+            <div class="video-heading text-center text-md-start"> 
+                <h1>Watch a video on how to use our app</h1>
+                <p>It’s not just about recording employee hours. It’s about understanding employee availability. It’s about hitting project deadlines — while staying on budget. It’s knowing you’ll never have to update another Excel spreadsheet. It’s about making things easy. It’s giving your team the tools they need to do their jobs well. And the insights to work more effectively than ever before.</p>
+            </div>
+            <div class="video-content">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7MnP25BL-wI" title="Young Man Using Smart Phone I Homem Navegando no Celular" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-    <div class="banner text-center">    
-        <h3>Created to save your time</h3>
-        <h2>Time Planner App</h2>
-        <a href="#"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a>
-        <a href="#"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a>
-    </div>
-    <div class="slider clear">    
-       <div class="web-width">  
-           <div class="video-info right">    
-               <h1>Watch a video on how to use our app</h1>
-               <p>It’s not just about recording employee hours. It’s about understanding employee availability. It’s about hitting project deadlines — while staying on budget. It’s knowing you’ll never have to update another Excel spreadsheet. It’s about making things easy. It’s giving your team the tools they need to do their jobs well. And the insights to work more effectively than ever before.</p>
-          </div>
-             <div class="video left"> 
-                 <iframe width="100%" height="342" src="https://www.youtube.com/embed/7MnP25BL-wI" title="Young Man Using Smart Phone I Homem Navegando no Celular" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             </div>
-       </div>
-    </div>
-    <div class="service-section clear">   
-        <div class="web-width">     
-            <div class="service-info text-center">  
+
+    <div class="feature">   
+        <div class="container"> 
+            <div class="feature-heading text-center">
                 <h1>Learn more about our application</h1>
-                <p>Track time without wasting a second</p>
+                <h5>Track time without wasting a second</h5>
             </div>
-            <div class="service-cards">     
-                <div class="card ">          
-                    <span><i class="fa fa-laptop" aria-hidden="true"></i></span>
-                    <h2>Time Tracking</h2>
-                    <p>Accurate and simple time tracking. Task-based estimation</p>
+            <div class="feature-cards">
+                <div class="feature-card">  
+                    <span><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+
+                    <div class="feature-card-info"> 
+                        <h2>Resource Planning</h2>
+                        <p>Monitor team’s utilization across different projects</p>
+                    </div>
+
                 </div>
-                <div class="card">          
-                    <span><i class="fa fa-external-link" aria-hidden="true"></i></span>
-                    <h2>
-                    Resource Planning</h2>
-                    <p>Monitor team’s utilization across different projects</p>
+                <div class="feature-card">  
+                    <span><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+
+                    <div class="feature-card-info"> 
+                        <h2>Resource Planning</h2>
+                        <p>Monitor team’s utilization across different projects</p>
+                    </div>
+
                 </div>
-                <div class="card">          
-                    <span><i class="fa fa-hdd-o" aria-hidden="true"></i></span>
-                    <h2> Integrations</h2>
-                    <p>Track time inside the most popular project management tools</p>
-                       
-                        
-                        
+                <div class="feature-card">  
+                    <span><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+
+                    <div class="feature-card-info"> 
+                        <h2>Resource Planning</h2>
+                        <p>Monitor team’s utilization across different projects</p>
+                    </div>
+
                 </div>
-                <div class="card">          
-                    <span><i class="fa fa-laptop" aria-hidden="true"></i></span>
-                    <h2>Task Management</h2>
-                    <p>Create tasks, track time and update progress in one place</p>
-                        
+                <div class="feature-card">  
+                    <span><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+
+                    <div class="feature-card-info"> 
+                        <h2>Resource Planning</h2>
+                        <p>Monitor team’s utilization across different projects</p>
+                    </div>
+
+                </div>
+                <div class="feature-card">  
+                    <span><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+
+                    <div class="feature-card-info"> 
+                        <h2>Resource Planning</h2>
+                        <p>Monitor team’s utilization across different projects</p>
+                    </div>
+
+                </div>
+                <div class="feature-card">  
+                    <span><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+
+                    <div class="feature-card-info"> 
+                        <h2>Resource Planning</h2>
+                        <p>Monitor team’s utilization across different projects</p>
+                    </div>
+
+                </div>
+                    
 
                     
-                </div>
-                <div class="card">          
-                    <span><i class="fa fa-external-link" aria-hidden="true"></i></span>
-                    <h2>Reporting</h2>
-                    <p>Highly flexible reports to analyze time the way you want </p>
-                        
-
-                   
-                </div>
-                <div class="card">          
-                    <span><i class="fa fa-hdd-o" aria-hidden="true"></i></span>
-                    <h2> Invoicing</h2>
-                    <p> Create invoices from time entries and send them to your clients</p>
-                       
-                        
-                       
-                </div>
-                    
-                   
-
-            </div>
-        </div>
-    </div>
-    <div class="plan-section clear" id="plan-section">      
-        <div class="web-width"> 
-            <div class="plan-heading text-center">  
-                <h1>Start using our app today</h1>
-                <p>Set of tools to seamlessly manage projects during their entire life cycle</p>
-            </div>
-            <div class="plan-card"> 
-                <div class="upper-plancard">    
-                    <h2>Free Version</h2>
-                    <h3><span>$0</span>/month</h3>
-                    <h4>Who is this for?</h4>
-                    <p>Free version for students and regular users</p>
-                </div>
-                <div class="lower-plancard">    
-                    <ul>    
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Time Tracking</li>
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Resource Planning</li>
-                        <li><span><i class="fa fa-times" aria-hidden="true"></i></span>Integrations</li>
-                        <li><span><i class="fa fa-times" aria-hidden="true"></i></span>Task Management</li>
-                        <li><span><i class="fa fa-times" aria-hidden="true"></i></span>Reporting</li>
-                        <li><span><i class="fa fa-times" aria-hidden="true"></i></span>Invoicing</li>
-                    </ul>
-                    <div class="lower-plancard-button"> 
-                        <a href="#" class="text-center">Get Free Now</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="plan-card"> 
-                <div class="upper-plancard">    
-                    <h2>User</h2>
-                    <h3><span>$15</span>/month</h3>
-                    <h4>Who is this for?</h4>
-                    <p>The version for business people having a tight schedule</p>
-                </div>
-                <div class="lower-plancard">    
-                    <ul>    
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Time Tracking</li>
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Resource Planning</li>
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Integrations</li>
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Task Management</li>
-                        <li><span><i class="fa fa-times" aria-hidden="true"></i></span>Reporting</li>
-                        <li><span><i class="fa fa-times" aria-hidden="true"></i></span>Invoicing</li>
-                    </ul>
-                    <div class="lower-plancard-button"> 
-                        <a href="#" class="text-center">Get Access Now</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="plan-card"> 
-                <div class="upper-plancard">    
-                    <h2>Pro</h2>
-                    <h3><span>$20</span>/month</h3>
-                    <h4>Who is this for?</h4>
-                    <p>Maximum version for large companies</p>
-                </div>
-                <div class="lower-plancard">    
-                    <ul>    
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Time Tracking</li>
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Resource Planning</li>
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Integrations</li>
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Task Management</li>
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Reporting</li>
-                        <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Invoicing</li>
-                    </ul>
-                    <div class="lower-plancard-button"> 
-                        <a href="#" class="text-center">Get Access Now</a>
-                    </div>
-                </div>
-
-            </div>
-            
-        </div>
-    </div>
-    <div class="blog-section clear">  
-        <div class="web-width"> 
-            <div class="blog-heading text-center">  
-                <h1>Our team is constantly trying for you</h1>
-            </div>
-            <div class="blog-cards clear">    
-                <div class="blog-card"> 
-                    <div class="blogcard-image">    
-                        <img src="./image/face1.jpg" alt="">
-                    </div>
-                    <div class="blogcard-info"> 
-                        <h2>Jason Doe</h2>
-                        <p>Programmer</p>
-                    </div>
-                </div>
-                <div class="blog-card"> 
-                    <div class="blogcard-image">    
-                        <img src="./image/face3.jpg" alt="">
-                    </div>
-                    <div class="blogcard-info"> 
-                        <h2>Andrew Smith</h2>
-                        <p>Designer</p>
-                    </div>
-                </div>
-                <div class="blog-card"> 
-                    <div class="blogcard-image">    
-                        <img src="./image/face1.jpg" alt="">
-                    </div>
-                    <div class="blogcard-info"> 
-                        <h2>Amanda Swon</h2>
-                        <p>Support</p>
-                    </div>
-                </div>
-                <div class="blog-card"> 
-                    <div class="blogcard-image">    
-                        <img src="./image/face3.jpg" alt="">
-                    </div>
-                    <div class="blogcard-info"> 
-                        <h2>Jane Olsen</h2>
-                        <p>Manager</p>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>
 
-    <div class="subs-section"> 
-        <div class="web-width">  
-           <div class="subs-heading text-center">  
-               <h2>Keep up to date with the latest updates</h2>
-               <h1>Subscribe to our newsletter</h1>
-           </div>
-           <div class="subs-details clear">   
-            <div class="subs-form"> 
-                <input type="email" name="" id="" placeholder="Email Address">
-            </div>
-            <div class="subs-button text-center"> 
-                <a href="#">Subscribe</a>  
-    
-            </div>  
-           </div>
-           
-       </div>
-    </div>
-    <div class="employee-section clear">  
-       <div class="web-width">  
-        <div class="employee-heading clear">  
-            <div class="employee-heading-left left">  
-                <h1>What's new?</h1>
-            </div>
-            <div class="employee-heading-right right">    
-                <p>Accurate employee time tracking software for reporting, invoicing and painless payroll. Trusted by over 2,000 businesses in more than 70 countries</p>
-    
-            </div>
-        </div>
-        <div class="employee-blogs clear"> 
-            
-            
-            
-            
-            <div class="employee-blog left clear"> 
-                <img src="./image/02.jpg" alt="">
-                <div class="employee-blog-content"> 
-                    <h2>Reporting</h2>
-                    <p>Highly flexible reports to analyze time the way you want</p>
+
+    <div class="new-section">   
+        <div class="container"> 
+            <div class="n-heading d-lg-flex justify-content-lg-between   text-center text-lg-start"> 
+                <div class="n-heading-left">    
+                    <h1>What's new?</h1>
+                </div>
+                <div class="n-heading-right">   
+                    <p>Accurate employee time tracking software for reporting, invoicing and painless payroll. Trusted by over 2,000 businesses in more than 70 countries. </p>
                 </div>
             </div>
-
-            <div class="employee-blog right clear"> 
-
-                <img src="./image/03.jpg" alt="">
-                
-                <div class="employee-blog-content"> 
-                    <h2>Reporting</h2>
-                    <p>Highly flexible reports to analyze time the way you want</p>
+            <div class="n-cards">   
+                <div class="n-card">    
+                       <div class="n-card-img"> 
+                           <img src="./image/02.jpg" alt="">
+                       </div>
+                       <div class="n-card-info"> 
+                           <h3>Reporting</h3>
+                           <p>Highly flexible reports to analyze time the way you want</p>
+                       </div>
                 </div>
+                <div class="n-card">    
+                       <div class="n-card-img"> 
+                           <img src="./image/03.jpg" alt="">
+                       </div>
+                       <div class="n-card-info"> 
+                           <h3>Invoicing</h3>
+                           <p>Create invoices from time entries and send them to your clients</p>
+                       </div>
+                </div>
+                 
+              
             </div>
-
         </div>
-       </div>
     </div>
 
     <div class="feedback-section">  
-        <div class="web-width">
-
-            <div class="subs-heading text-center" id="feedback-heading">  
-                <h2>Feedback from our users</h2>
+        <div class="container"> 
+            <div class="feedback-heading text-center">  
+                <h3>Feedback from our users</h3>
                 <h1>What do users say about our application</h1>
             </div>
-            <div class="feedback-cards clear">    
-                <div class="feedback-card left"> 
-                    <div class="f-card-content">    
-                        <p><i class="fa fa-quote-left" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
+            <div class="feedback-cards">    
+                <div class="feedback-card"> 
+                    <div class="feedback-card-info">
+                        <p>
+                            <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
+                        
                     </div>
-                    <div class="f-card-info clear">   
+                    <div class="feedback-card-user"> 
                         <img src="./image/face1.jpg" alt="">
-                        <div class="f-card-bio left">    
-                            <h3>Jason Doe</h3>
+                        <div class="feedback-card-user-bio">    
+                            <h4>Jason Doe</h4>
                             <span>User</span>
                         </div>
                     </div>
+                        
+    
                 </div>
-                <div class="feedback-card left"> 
-                    <div class="f-card-content shadow">    
-                        <p><i class="fa fa-quote-left" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
+                <div class="feedback-card"> 
+                    <div class="feedback-card-info">
+                        <p>
+                            <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
+                        
                     </div>
-                    <div class="f-card-info clear">   
+                    <div class="feedback-card-user"> 
                         <img src="./image/face3.jpg" alt="">
-                        <div class="f-card-bio left">    
-                            <h3>Jason Doe</h3>
+                        <div class="feedback-card-user-bio">    
+                            <h4>Robert John</h4>
                             <span>User</span>
                         </div>
                     </div>
+                        
+    
                 </div>
-                <div class="feedback-card left"> 
-                    <div class="f-card-content shadow">    
-                        <p><i class="fa fa-quote-left" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
+                <div class="feedback-card"> 
+                    <div class="feedback-card-info">
+                        <p>
+                            <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
+                        
                     </div>
-                    <div class="f-card-info clear">   
+                    <div class="feedback-card-user"> 
                         <img src="./image/face1.jpg" alt="">
-                        <div class="f-card-bio left">    
-                            <h3>Jason Doe</h3>
+                        <div class="feedback-card-user-bio">    
+                            <h4>Nil Smith</h4>
                             <span>User</span>
                         </div>
                     </div>
+                        
+    
                 </div>
             </div>
+                
         </div>
     </div>
 
-    <div class="footer clear">    
-        <div class="web-width"> 
-            <div class="footer-map left">    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.989698171769!2d90.56190132529241!3d23.783381178647957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ca602fcf7735%3A0xc8fa6e2f944cf8c0!2sBhulta%2C%20Bangladesh!5e0!3m2!1sen!2ssg!4v1691250503204!5m2!1sen!2ssg" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="footer-form right"> 
-                <h2>Contact us</h2>
-                <p>Contact us if you have any questions and we will contact you. We appreciate user feedback and be sure to take into account your wishes.</p>
-                <form action="" class="clear">
-                    <input type="email" name="" id="email" placeholder="Email Address">
-                    <input type="text" name="" id="text" placeholder="Name">
-                    <input type="number" name="" id="number" placeholder="Your Phone">
-                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button type="submit">send</button>
 
-                </form>
+    <div class="buy">   
+        <div class="container"> 
+            <div class="buy-heading text-center">
+                <h1>Start using our app today</h1>
+                <h5>Set of tools to seamlessly manage projects during their entire life cycle</h5>
             </div>
-           
+            <div class="buy-cards"> 
+                <div class="buy-card">  
+                    <div class="card-heading">  
+                        <h2>Free Version</h2>
+                        <h3><span>$ 0</span> / month</h3>
+                        <h4>Who is this for?</h4>
+                        <p>Free version for students and regular users</p>
+                    </div>
+                    <div class="card-body"> 
+                        <ul>    
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Time Tracking</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Resource Planning</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Integrations</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Task Management</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Reporting</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Invoicing</li>
+                        </ul>
+                    </div>
+                    <div class="card-button">   
+                        <a href="#">Get Free Now</a>
+                    </div>
+                </div>
+                <div class="buy-card">  
+                    <div class="card-heading">  
+                        <h2>User</h2>
+                        <h3><span>$ 15</span> / month</h3>
+                        <h4>Who is this for?</h4>
+                        <p>Free version for students and regular users</p>
+                    </div>
+                    <div class="card-body"> 
+                        <ul>    
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Time Tracking</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Resource Planning</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Integrations</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Task Management</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Reporting</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Invoicing</li>
+                        </ul>
+                    </div>
+                    <div class="card-button">   
+                        <a href="#">Get Free Now</a>
+                    </div>
+                </div>
+                <div class="buy-card">  
+                    <div class="card-heading">  
+                        <h2>Pro</h2>
+                        <h3><span>$ 30</span> / month</h3>
+                        <h4>Who is this for?</h4>
+                        <p>Free version for students and regular users</p>
+                    </div>
+                    <div class="card-body"> 
+                        <ul>    
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Time Tracking</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Resource Planning</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Integrations</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Task Management</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Reporting</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Invoicing</li>
+                        </ul>
+                    </div>
+                    <div class="card-button">   
+                        <a href="#">Get Free Now</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <div class="last-footer">   
-        <p>© Copyright 2023 Jihad - All Rights Reserved</p>
-    </div>
 
+
+
+
+
+
+
+
+
+
+
+    <script src="./bootstrap.bundle.min.js"></script>
 </body>
 </html>
