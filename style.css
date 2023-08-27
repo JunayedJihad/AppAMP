@@ -134,7 +134,7 @@ ul{
 }
 
 .feature-card{
-    padding: 2rem 1rem;
+    padding: 2.5rem 1.5rem;
     margin-bottom: 2rem;
     border-radius: 8px;
     
@@ -194,7 +194,7 @@ ul{
 /* New section */
 
 .new-section{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding: 3rem 0;
 }
 .n-heading{
@@ -205,9 +205,11 @@ ul{
 }
 .n-cards{}
 .n-card{    
+    margin: 0 auto;
     margin-bottom: 2rem;
     border-radius: 8px;
-    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    max-width: 500px;
 }
 .n-card-img{}
 .n-card-img img{
@@ -243,6 +245,7 @@ ul{
     .n-card{
         flex-basis: 49%;
         display: flex;
+        max-width: 100%;
     }
     .n-card-img{
         flex-basis: 49%;
@@ -361,8 +364,15 @@ ul{
 @media(min-width:1200px){
     .feedback-card-info p{
        
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         
+    }
+    .feedback-card-info::after{    
+       
+        
+        top: 95%;
+        
+    
     }
 }
 
@@ -370,6 +380,7 @@ ul{
 
 .buy{
     background-color: rgb(247, 249, 255);
+    padding: 4rem 0;
     
 }
 .buy-heading{
@@ -420,18 +431,18 @@ ul{
    
 .card-heading{
     border-bottom: 1px solid #ddd;
+    padding: 3rem 1rem;
    
 }
 .card-heading h2{
     font-size: 3rem;
-    width: 95%;
-    margin-left: auto;
 }
+    
+   
 .card-heading h3{
     font-size: 2rem;
     font-weight: 600;
-    width: 95%;
-    margin-left: auto;
+    
 }
 .card-heading h3 span{
     font-size: 4rem;
@@ -439,25 +450,23 @@ ul{
 }
 .card-heading h4{
     font-size: 2rem;
-    width: 95%;
-    margin-left: auto;
+    
 }
 .card-heading p{
     font-size: 1.6rem;
     color: rgba(0,0,0,.7);
-    width: 95%;
-    margin-left: auto;
+    
 }
 .card-body{
-    width: 95%;
-    margin-left: auto;
+    
+    padding: 1rem 1rem;
 }
 .card-body ul{
     margin-left: -2rem;
    
 }
 .card-body ul li{
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: rgba(0,0,0,.6);
     font-weight: 300;
     line-height: 4rem;
@@ -485,4 +494,237 @@ ul{
 .card-button a{
     font-size: 1.8rem;
    
+}
+@media(min-width:992px){
+    .buy-card{
+        
+        max-width: 500px;
+       
+        
+       
+    }
+}
+@media(min-width:1200px){
+    .buy-cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .buy-card{
+        flex-basis: 31.33%;
+    }
+   
+}
+       
+/* team section */
+
+.team-section{}
+.team-heading{}
+.team-heading h1{
+    margin-bottom: 3rem;
+}
+.team-cards{}
+.team-card{
+    background-color: #fff;
+    max-width: 400px !important;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    border-radius: 8px;
+}
+.team-card:hover{
+   
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+   
+}
+.team-card-img{}
+.team-card-img img{
+    width: 100%;
+}
+.team-card-info{
+    padding: 2rem ;
+}
+.team-card-info h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.team-card-info span{
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgba(0,0,0,.6);
+}
+@media(min-width:768px){
+    .team-cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .team-card{
+        flex-basis: 47%;
+    }
+}
+@media(min-width:1200px){
+    .team-cards{
+        max-width: 1600px;
+    }
+    .team-card{
+        flex-basis: 23.5%;
+    }
+}
+
+/* subscribe */
+
+.subscribe{
+    padding: 5rem 0 6rem 0;
+    background-color: rgb(247, 249, 255);
+}
+.subscribe-heading{
+    margin-bottom: 2rem;
+}
+.subscribe-heading h3{
+    color: grey;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.subscribe-heading h1{
+    font-size: 3rem;
+}
+.subscribe-form{}
+.subscribe-form form{
+    display: flex;
+    gap: 1rem;
+    flex-flow: column;
+    align-items: center;
+}
+@media(min-width: 992px){
+    .subscribe-form form{
+        
+        flex-flow: row;
+        justify-content: center;
+    }
+}
+.subscribe-form input{
+    font-size: 1.5rem;
+    border: 2px solid rgba(0,0,0,.2);
+    padding: .5rem 1rem;
+    height: 3rem;
+    width: 300px;
+    outline: none;
+}
+.subscribe-form input:focus{
+   
+    border: 1px solid rgb(98, 120, 223);
+    box-shadow: 3px 3px 27px -3px #6278df;
+}  
+.subscribe-form button{
+    color: #fff;
+    background-color: rgb(98, 120, 223);
+    border: 2px solid transparent;
+    height: 3rem;
+    width: 220px;
+    font-size: 1.2rem;
+}
+.subscribe-form button:hover{
+    background-color: #fff;
+    color: rgb(98, 120, 223);
+    border: 2px solid rgb(98, 120, 223);
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+/* map section */
+
+.map-section{
+    padding: 3rem 0;
+   
+}
+
+.map-section .container{
+    max-width: 500px;
+}
+.contact-left{}
+.contact-left iframe{
+    height: 20rem;
+    border-radius: 5px;
+}
+.contact-right{}
+.contact-heading{
+    padding: 3rem 0;
+}
+.contact-heading h2{
+    font-size: 2.2rem;
+}
+.contact-heading p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: grey;
+}
+.contact-right form{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+.contact-right form input{
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    border: 2px solid rgba(0,0,0,.2);
+    outline: none;
+    border-radius: 5px;
+}
+.contact-right form input:focus{
+   
+    border: 2px solid #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+    
+
+}
+.contact-right form textarea{
+    font-size: 1.5rem;
+    padding: .7rem 1rem;
+    border: 2px solid rgba(0,0,0,.2);
+    outline: none;
+    border-radius: 5px;
+    height: 15rem;
+}
+.contact-right form textarea:focus{
+    border: 2px solid #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+.contact-right form button{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    border: 2px solid rgba(0,0,0,.2);
+    color: white;
+    background-color: #6278df;
+    border-radius: 5px;
+}
+.contact-right form button:hover{
+   
+    border: 2px solid rgb(98, 120, 223);
+    background-color: white;
+    color: #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+@media(min-width:1200px){
+   
+    .map-section .container{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contact-left iframe{
+        height: -webkit-fill-available;
+       
+    }
+    .contact-heading{
+        padding: 0;
+    }
+    .contact-left{
+        flex-basis: 58%;
+    }
+    .contact-right{
+        flex-basis: 40%;
+    }
 }
