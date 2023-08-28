@@ -37,7 +37,7 @@ ul{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 5rem 0;
+    padding: 10rem 0 5rem 0;
 }
 .banner h1, .banner h2{
     color: white;
@@ -45,7 +45,7 @@ ul{
 }
 .banner h2{
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 300;
 }
 .banner h1{
     font-size: 4rem;
@@ -58,6 +58,7 @@ ul{
     flex-direction: column;
     gap: 2rem;
 }
+
 @media(min-width:768px){
     .banner-button{
         width: 100%;
@@ -70,6 +71,16 @@ ul{
         width: 15rem;
     }
 }
+@media(max-width:768px){
+    .banner h2{
+        font-size: 2.2rem;
+        
+    }
+    .banner h1{
+        font-size: 3.4rem;
+        
+    }
+}
 .banner-button i{
     margin-right: .8rem;
 }
@@ -80,6 +91,12 @@ ul{
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: 600;
+    border: 2px solid transparent;
+}
+.banner-button a:hover{
+    color: #6278df;
+    border: 2px solid #6278df;
+    background-color: #fff;
 }
 
 /* video */
@@ -663,8 +680,14 @@ ul{
     flex-flow: column;
     gap: 1rem;
 }
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .contact-right form input{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 200;
     padding: 1rem 1rem;
     border: 2px solid rgba(0,0,0,.2);
     outline: none;
@@ -678,7 +701,8 @@ ul{
 
 }
 .contact-right form textarea{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 200;
     padding: .7rem 1rem;
     border: 2px solid rgba(0,0,0,.2);
     outline: none;
@@ -727,4 +751,181 @@ ul{
     .contact-right{
         flex-basis: 40%;
     }
+   
+    .input-wrapper{
+        
+        
+        display: flex;
+        flex-flow: row;
+        
+    }
+    .input-wrapper input{
+        flex-basis: 49%;
+        width: 50%;
+    }
+    .contact-right form input{
+        font-size: 1.5rem;
+    }
+    .contact-right form textarea{
+        font-size: 1.5rem;
+    }
+
 }
+
+
+/* Header */
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+header .container{
+    display: flex;
+    height: 5rem;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.header-logo img{
+    width: 3.5rem;
+}
+.header-logo-text{}
+.header-logo-text p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: -.1rem;
+}
+.header-menu{
+    
+    display: flex;
+    flex-grow: 3;
+    justify-content: space-between;
+}
+.header-menu > ul{
+    display: flex;
+    /* margin-bottom: -.1rem; */
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: -.02rem;
+}
+.header-menu > ul li{
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-menu > ul li a{
+    color: black;
+    font-size: 1.25rem;
+}
+.header-menu > ul li a i{
+    margin-left: .5rem;
+}
+.header-menu-button{
+    display: flex;
+    align-items: center;
+}
+.header-menu-button a{
+    color: white;
+    background-color: #6278df;
+    border: 2px solid transparent;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.header-menu-button a:hover{
+    
+    color: #6278df;
+    border: 2px solid #6278df;
+    background-color: #fff;
+    
+}
+.header-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-icon i{
+    font-size: 1.8rem;
+}
+
+
+/* Hover menu */
+
+.header-menu ul li:hover >a{
+    color: #6278df;
+}
+.header-menu ul > li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 15rem;
+    visibility: hidden;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+.header-menu ul li:hover > ul{
+    
+    visibility: visible;
+}
+.header-menu ul > li ul > li {
+    margin-left: -2rem;
+    padding: .5rem 0rem;
+    border-bottom: 1px solid grey;
+   
+}
+.header-menu ul > li ul > li:last-child {
+    
+    border-bottom: none;
+   
+}
+.header-menu ul > li ul > li a{
+    padding: .5rem;
+}
+
+@media(max-width:768px){
+    .header-menu{
+        
+
+    background-color: aliceblue;
+    position: fixed;
+    top: 5rem;
+    
+    right: -100%;
+    flex-flow: column;
+    gap: 2rem;
+    padding: 3rem 5rem;
+    height: 100vh;
+    transition: all .4s;
+    justify-content: flex-start;
+    }
+    #check:checked ~ .header-menu{
+        right: 0;
+    }
+    .header-menu > ul{
+        margin-left: -2rem;
+        flex-direction: column;
+        
+        gap: 2rem;
+        
+    
+    }
+    .header-menu ul > li ul{
+    
+        top: 100%;
+        left: -30%;
+        background-color: aliceblue;
+        width: 15rem;
+        
+        z-index: 1;
+    }
+   
+    
+
+    
+}
+
